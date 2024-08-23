@@ -1,0 +1,28 @@
+"use client"
+
+import { PlusCircleIcon } from "lucide-react"
+import { Button } from "./ui/button"
+import { useRouter } from "next/navigation"
+
+
+function PlaceholderDocument() {
+  
+    const router = useRouter();
+
+    const handleClick = () => {
+        //Check if user is Free Tier or Pro if they're over file limit, push to upgrade
+        router.push("/dashboard/upload");
+    };
+    
+    return (
+    <Button 
+        onClick={handleClick} 
+        className="flex flex-col tems-center w-64 h-80 rounded-xl bg-gray-200 drop-shadow-md text-gray-400"
+    >
+        <PlusCircleIcon className="h-16 w-16"/>
+        <p>Add a report</p>
+    </Button>
+  )
+}
+
+export default PlaceholderDocument
