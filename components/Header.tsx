@@ -9,7 +9,7 @@ function Header() {
         <Link 
             href='/dashboard' className="text-2xl"
         >
-            Chat to <span className="text-red-600">Physician</span>
+            Chat to <span className="text-gray-900">Physician</span>
         </Link>
 
         <SignedIn>
@@ -23,8 +23,8 @@ function Header() {
                 </Button>
 
                 <Button asChild variant="outline" className="border-gray-300">
-                    <Link href="/dashboard/upgrade">
-                        <FilePlus2 className="text-red-600"/>
+                    <Link href="/dashboard/upload">
+                        <FilePlus2 className="text-gray-500"/>
                     </Link>
                 </Button>
 
