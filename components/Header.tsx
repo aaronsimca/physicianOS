@@ -2,6 +2,7 @@ import { SignedIn, UserButton } from "@clerk/nextjs"
 import Link from "next/link"
 import { Button } from "./ui/button"
 import { FilePlus2 } from "lucide-react"
+import UpgradeButton from "./UpgradeButton"
 
 function Header() {
   return (
@@ -9,7 +10,7 @@ function Header() {
         <Link 
             href='/dashboard' className="text-2xl"
         >
-            Chat to <span className="text-gray-900">Physician</span>
+            Physician <span className="text-orange-600">OS</span>
         </Link>
 
         <SignedIn>
@@ -29,6 +30,7 @@ function Header() {
                 </Button>
 
                 {/* Upgrade Button */}
+                <UpgradeButton />
                 <UserButton />
             </div>
         </SignedIn>

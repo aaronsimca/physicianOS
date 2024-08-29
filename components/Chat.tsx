@@ -10,7 +10,7 @@ import { collection, orderBy, query } from "firebase/firestore";
 import { db } from "@/firebase";
 import { askQuestion } from "@/actions/askQuestion";
 import ChatMessage from "./ChatMessage";
-// import { useToast } from "./ui/use-toast";
+import { useToast } from "./ui/use-toast";
 
 export type Message = {
   id?: string;
@@ -21,6 +21,7 @@ export type Message = {
 
 function Chat({ id }: { id: string }) {
   const { user } = useUser();
+  const { toast } = useToast();
 
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
@@ -97,6 +98,11 @@ function Chat({ id }: { id: string }) {
 
         if (!success) {
             // Toast ..
+            toast({
+              variant: "destructive",
+              title: "Error",
+              description: message,
+            });
 
             setMessages((prev) => 
                 prev.slice(0, prev.length -1).concat([
@@ -160,7 +166,7 @@ function Chat({ id }: { id: string }) {
 
             <Button type="submit" disabled={!input || isPending}>
                     {isPending ? (
-                        <Loader2Icon className="animate-spin text-indigo-600" />
+                        <Loader2Icon className="animate-spin text-white" />
                     ) : (
                         "Ask"
                     )}

@@ -97,7 +97,7 @@ export default function Home() {
                 <dt className="inline font-semibold text-gray-900">
                   <feature.icon 
                     aria-hidden="true"
-                    className="absolute left-1 top-1 h-5 w-5 text-gray-600"
+                    className="absolute left-1 top-1 h-5 w-5 text-red-600"
                   />
                 </dt>
                 <dd>{feature.description}</dd>

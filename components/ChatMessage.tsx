@@ -12,8 +12,8 @@ function ChatMessage({ message }: { message: Message }) {
 
   return (
     <div className={`chat ${isHuman ? "chat-end" : "chat-start"}`}>
-      <div className="chat-image avatar">
-        <div className="w-10 rounded-full">
+      <div className="chat-image avatar ">
+        <div className="w-10 rounded-full ">
           {isHuman ? (
             user?.imageUrl && (
               <Image
@@ -21,11 +21,11 @@ function ChatMessage({ message }: { message: Message }) {
                 alt="Profile Picture"
                 width={40}
                 height={40}
-                className="rounded-full"
+                className="rounded-full "
               />
             )
           ) : (
-            <div className="h-10 w-10 bg-gray-300 flex items-center justify-center">
+            <div className="h-10 w-10 bg-orange-500 flex items-center justify-center">
               <BotIcon className="text-white h-7 w-7 " />
             </div>
           )}
@@ -33,7 +33,7 @@ function ChatMessage({ message }: { message: Message }) {
       </div>
 
       <div
-        className={`chat-bubble prose ${isHuman && "bg-gray-300 text-white"}`}
+        className={`chat-bubble prose ${isHuman && "bg-blue-600 text-white"}`}
       >
         {message.message === "Thinking..." ? (
           <div className="flex items-center justify-center">

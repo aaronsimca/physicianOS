@@ -6,7 +6,7 @@ function Dashboard() {
   return (
     <div className="h-full max-w-7xl mx-auto">
         <h1 className="text-xl p-5 bg-gray-100 font-extralight text-gray-600">
-            My Reports
+            Medical Reports
         </h1>
 
         {/* Documents */}
