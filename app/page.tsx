@@ -104,17 +104,18 @@ export default function Home() {
               </div>
             ))}
           </dl>
+
+          <div className="flex flex-col justify-center items-center mx-auto max-w-7xl px-7 lg:px-8">
+                <div className="mx-auto max-w-2xl sm:text-center">
+                  <p className="mt-20 text-lg leading-8 text-gray-900">
+                    <span className="text-xs leading-7 text-gray-600">© {new Date().getFullYear()} PhysicianOS Incorporated. All rights reserved.</span>               
+                  </p>
+                </div>
+          </div>
+            
+              
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-white text-white py-4 mt-1">
-        <div className="text-center">
-          <a href="https://twitter.com/aaronsiim" className="text-black hover:underline">
-            X
-          </a>
-        </div>
-      </footer>
     </main>
   );
 }
