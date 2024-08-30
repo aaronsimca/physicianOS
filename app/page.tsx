@@ -111,7 +111,7 @@ export default function Home() {
 
         <div className="mx-auto max-w-2xl sm:text-center">
           <div className="mt-20 text-lg leading-8 text-gray-900">
-            <div className="text-xs leading-10 text-gray-600 hover:underline text-center sm:text-center">
+            <div className="text-xs leading-10 text-gray-600 underline hover:no-underline text-center sm:text-center">
               <a href="https://twitter.com/aaronsiim" target="_blank" rel="noopener noreferrer">Contact</a>
             </div>
             <span className="text-xs leading-7 text-gray-600">© {new Date().getFullYear()} PhysicianOS. All rights reserved.</span>

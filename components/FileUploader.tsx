@@ -110,8 +110,8 @@ function FileUploader() {
       {!uploadInProgress && (
         <div
           {...getRootProps()}
-          className={`p-10 border-2 border-dashed mt-10 w-[90%]  border-red-600 text-red-600 rounded-lg h-96 flex items-center justify-center ${
-            isFocused || isDragAccept ? "bg-red-300" : "bg-red-100"
+          className={`p-10 border-2 border-dashed mt-10 w-[90%]  border-gray-600 text-gray-600 rounded-lg h-96 flex items-center justify-center ${
+            isFocused || isDragAccept ? "bg-red-100" : "bg-gray-100"
           }`}
         >
           <input {...getInputProps()} />

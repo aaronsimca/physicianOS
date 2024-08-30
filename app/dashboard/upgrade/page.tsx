@@ -89,7 +89,7 @@ function PricingPage() {
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="h-6 w-5 flex-none text-blue-600" />
-                Up to 3 messages per document
+                Up to 2 messages per document
               </li>
               <li className="flex gap-x-3">
                 <CheckIcon className="h-6 w-5 flex-none text-red-600" />
