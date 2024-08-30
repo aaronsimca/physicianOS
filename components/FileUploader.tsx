@@ -54,14 +54,14 @@ function FileUploader() {
     [key in StatusText]: JSX.Element;
   } = {
     [StatusText.UPLOADING]: (
-      <RocketIcon className="h-20 w-20 text-orange-600" />
+      <RocketIcon className="h-20 w-20 text-red-600" />
     ),
     [StatusText.UPLOADED]: (
-      <CheckCircleIcon className="h-20 w-20 text-orange-600" />
+      <CheckCircleIcon className="h-20 w-20 text-red-600" />
     ),
-    [StatusText.SAVING]: <SaveIcon className="h-20 w-20 text-orange-600" />,
+    [StatusText.SAVING]: <SaveIcon className="h-20 w-20 text-red-600" />,
     [StatusText.GENERATING]: (
-      <HammerIcon className="h-20 w-20 text-orange-600 animate-bounce" />
+      <HammerIcon className="h-20 w-20 text-red-600 animate-bounce" />
     ),
   };
 
@@ -82,7 +82,7 @@ function FileUploader() {
       {uploadInProgress && (
         <div className="mt-32 flex flex-col justify-center items-center gap-5">
           <div
-            className={`radial-progress bg-orange-300 text-white border-orange-600 border-4 ${
+            className={`radial-progress bg-red-300 text-white border-red-600 border-4 ${
               progress === 100 && "hidden"
             }`}
             role="progressbar"
@@ -103,15 +103,15 @@ function FileUploader() {
           }
 
           {/* @ts-ignore */}
-          <p className="text-orange-600 animate-pulse">{status}</p>
+          <p className="text-red-600 animate-pulse">{status}</p>
         </div>
       )}
 
       {!uploadInProgress && (
         <div
           {...getRootProps()}
-          className={`p-10 border-2 border-dashed mt-10 w-[90%]  border-orange-600 text-orange-600 rounded-lg h-96 flex items-center justify-center ${
-            isFocused || isDragAccept ? "bg-orange-300" : "bg-orange-100"
+          className={`p-10 border-2 border-dashed mt-10 w-[90%]  border-red-600 text-red-600 rounded-lg h-96 flex items-center justify-center ${
+            isFocused || isDragAccept ? "bg-red-300" : "bg-red-100"
           }`}
         >
           <input {...getInputProps()} />

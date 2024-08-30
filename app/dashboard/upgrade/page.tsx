@@ -50,7 +50,7 @@ function PricingPage() {
     <div>
       <div className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-base font-semibold leading-7 text-blue-600">
+          <h2 className="text-base font-semibold leading-7 text-red-600">
             Pricing
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
@@ -99,7 +99,7 @@ function PricingPage() {
           </div>
 
           {/* PRO */}
-          <div className="ring-2 ring-yellow-600 rounded-3xl p-8">
+          <div className="ring-2 ring-red-600 rounded-3xl p-8">
             <h3 className="text-lg font-semibold leading-8 text-red-600">
               Pro Plan
             </h3>
@@ -116,7 +116,7 @@ function PricingPage() {
             </p>
 
             <Button
-              className="bg-orange-600 w-full text-white shadow-sm hover:bg-yellow-500 mt-6 block rounded-md px-3 py-1 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="bg-red-600 w-full text-white shadow-sm hover:bg-green-500 mt-6 block rounded-md px-3 py-1 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               disabled={loading || isPending}
               onClick={handleUpgrade}
             >
