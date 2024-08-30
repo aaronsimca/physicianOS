@@ -17,7 +17,7 @@ import { auth } from "@clerk/nextjs/server";
 // Initialize the OpenAI model with API key and model name
 const model = new ChatOpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-  modelName: "gpt-4o-mini",
+  modelName: "gpt-4o",
 });
 
 export const indexName = "physician";
